@@ -128,8 +128,8 @@
                 <configuration>
                     <schemaVersion>v2</schemaVersion>
                     <subscriptionId></subscriptionId>
-                    <resourceGroup></resourceGroup>
-                    <appName></appName>
+                    <resourceGroup>4204n6kickmyb-2168516</resourceGroup>
+                    <appName>4204n6kickmyb-2168516</appName>
                     <pricingTier>F1</pricingTier>
                     <region>canadacentral</region>
                     <runtime>
@@ -151,5 +151,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
