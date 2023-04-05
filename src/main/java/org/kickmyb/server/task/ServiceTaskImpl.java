@@ -60,6 +60,7 @@ public class ServiceTaskImpl implements ServiceTask {
         for (MTask b : user.tasks) {
             if (b.name.equalsIgnoreCase(req.name)) throw new Existing();
         }
+        //if(req.name.equalsIgnoreCase("Mange de l'amour")) throw new
         // tout est beau, on crée
         MTask t = new MTask();
         t.name = req.name;

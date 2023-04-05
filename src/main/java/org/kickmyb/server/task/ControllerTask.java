@@ -13,6 +13,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 // This is JAX-RS Jersey style annotations
@@ -76,8 +78,11 @@ public class ControllerTask {
 	 * @return
 	 */
 	@GetMapping("/test")
-	public @ResponseBody String test() {
-		return "SALUT";
+	public void test(HttpServletResponse response) throws IOException {
+
+		response.setStatus(499);
+		response.getWriter().write("Ayoye");
+		response.getWriter().flush();
 	}
 
 	/**
